@@ -184,6 +184,11 @@
     outline-color:#10a37f;
     color: #10a37f;
 }
+.container2 .form .btn2 .dashhh{
+    color: rgb(30, 133, 102);
+    text-decoration: none;
+    color: white;
+}
 .container2 .form button {
     padding: 10px;
     border: 1px solid #10a37f;
@@ -443,6 +448,11 @@
         outline-color: #10a37f;
         outline-width: 1px;
         transition: 3ms;
+    }
+    .container2 .form .btn2 .dashhh{
+        color: rgb(30, 133, 102);
+        text-decoration: none;
+        color: white;
     }
     .container2 .form input:hover {
         border: 1px solid #10a37f;
