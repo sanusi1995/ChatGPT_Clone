@@ -5,118 +5,58 @@
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link rel="preconnect" href="https://fonts.googleapis.com">
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
-    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
-    <link rel="stylesheet" href="style.css">
-   
-    <!-- <img src="Icons/chat-gpt.png" alt=""> -->
-    <title>ChatGPT Clone Project</title>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./style.css">
+    <title>Login - ChatGPT</title>
 </head>
 <body>
-    <div class="wrapper">
 
-        <div class="first_container">
-            <img src="Icons/menu.png" alt="" width="20px">
-            <div id="clear_chat">
-                <img src="Icons/pen-and-paper.png" alt=""width="20px"> 
-            </div>          
-        </div>        
-
-                <div class="arrow-down">
-                    <h3>ChatGPT</h3>
-                    <img src="Icons/down-arrow.png" alt="" id="dropdown_icon">
-                </div>
-
-
-            <div class="dropdown-content">
-
-                <div class="f_text">
-                    <div class="img_and_text">
-                        <button class="img_text">
-                            <img src="Icons/star.png" alt="">
-                        </button>
-                        <div class="text">
-                            <h3>Chatgpt Plus</h3>
-                            <p>Our smartest model & more</p>
-                        </div>
-                    </div>
-                     <div class="upgradeBtn">
-                        <button id="upgrade_btn">Upgrade</button>
-                     </div>
-                </div>
-
-              <div class="f_text">
-                   <div class="img_and_text">
-                        <button class="img_text">
-                            <img src="Icons/physics.png" alt="">
-                        </button>
-                        <div class="text">
-                            <h3>Chatgpt</h3>
-                            <p>Great for everyday task</p>
-                        </div>
-                   </div>
-                    <input type="checkbox" name="" id="checkbox1">
-              </div>
-
-               <hr>
-
-              <div class="f_text">
-                   <div class="img_and_text">
-                        <div class="img_text">
-                            <img src="Icons/messenger.png" alt="">
-                        </div>
-                        <h3>Temporary Chat</h3>
-                   </div>
-                    <input type="checkbox" id="toggle-button" class="toggle-input">
-                    <label for="toggle-button" class="toggle-label"></label>
-              </div>
-         </div>
-
-
-             
-
-        <div class="Input_container">
-            <div class="heading">
-                <h1>What can I help with?</h1>
+    <div class="container">
+        <div id="form" class="form">
+            <form>
+                <h2 id="header1" class="header1">Welcome back</h2>
+                <h2 id="header3" class="header3">Enter your password</h2>
+                <input type="email" placeholder="Email Address*" required>
+                <input id="password" class="password" type="password" placeholder="Password*" required>
+    
+                <button id="btn1" onclick="passsword()">Continue</button>
+                <button class="btn2" id="btn2" onclick="passsword()">
+                    <a href="./dashboard.html">Continue</a>
+                </button>
+            </form>
+    
+            <div class="alternative">
+                <p>Don't have an account?  <a href="./signup.html" class="log">Sign Up</a></p>
             </div>
-            <div class="input">
-                <textarea class="icon-textarea" id="" placeholder="Message ChatGPT"></textarea>
-            </div> 
-
-            <button class="response_Icon">
-                <img src="Icons/up-arrow.png" alt="">
-            </button>
-
-
         </div>
-
-        <div class="input_subset">          
-                <button class="surprise-me-button">
-                    <img src="Icons/giftbox.png" alt="">
-                    <p>surprise-me</p>
-                </button>
-
-                <button class="surprise-me-button">
-                    <img src="Icons/brainstrom.png" alt="">
-                    <p>Brainstorm</p>
-                </button>
-                           
-                <button class="surprise-me-button">
-                    <img src="Icons/edit.png" alt="">
-                    <p>Help me write</p>
-                </button>
-
-            <!--
-                <img src="Icons/coding.png" alt="">
-                <button class="surprise-me-button">Code</button> -->
-
-           
-                <button class="surprise-me-button">More</button>
-
+    
+        <div class="or">
+            <p>OR</p>
         </div>
- </div>
-
-
- 
-  <script src="script.js"></script>
+    
+        <div class="options">
+            <div class="google">
+                <button>
+                    <img src="./images/7123025_logo_google_g_icon.png" alt="">
+                    <a style="text-decoration: none;" href="https://accounts.google.com/v3/signin/identifier?authuser=0&continue=https%3A%2F%2Fmyaccount.google.com%2F%3Fhl%3Den%26utm_source%3DOGB%26utm_medium%3Dact%26gar%3DWzJd%26pli%3D1&ec=GAlAwAE&hl=en&service=accountsettings&flowName=GlifWebSignIn&flowEntry=AddSession&dsh=S-1676585918%3A1725963445572664&ddm=0" target="_blank" class="text22">Continue with Google</a>
+                </button>
+            </div>
+            <div class="microSoft">
+                <button>
+                    <img src="./images/4202105_microsoft_logo_social_social media_icon.png" alt="">
+                    <a class="text22" href="https://signup.live.com/?lic=1" target="_blank" >Continue with Microsoft Account</a>
+                </button>
+            </div>
+            <div class="apple">
+                <button>
+                    <img src="./images/104490_apple_icon.png" alt="">
+                    <a href="https://icloud.com/" target="_blank" class="text22">Continue with Apple</a>
+                </button>
+            </div>
+        </div>
+    
+    </div>
+    
+    <script src="./script.js"></script>
 </body>
 </html>
