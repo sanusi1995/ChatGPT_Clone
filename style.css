@@ -152,9 +152,21 @@ textarea {
     margin-top: 1rem;
 }
 
+.log-out{
+    padding: 1rem;
+    position: absolute;
+    left: 85%;
+    top: 3%;
+    border-radius: 9px;
+    border: none;
+    color:lightblue;
+}
 
-
-
+.log-out:hover{
+    background: lightgray;
+    color: red;
+    font-weight: normal;
+}
 
 
 
@@ -164,16 +176,17 @@ textarea {
 
 
 @media (max-width: 768px) {
-    /* .first_container{
+
+    .first_container{
         display: flex;
-        gap: 27rem;
+        gap:2.7rem;
     }
 
     .arrow-down{
         display: flex;
         gap: 8px;
         cursor: pointer;
-        margin-left: 12rem;
+        margin-left: 9rem;
         margin-top: -1.45rem;
     }
 
@@ -187,143 +200,85 @@ textarea {
         padding: 1rem;
         margin-left: 6rem;
         border-radius: 2rem;
+        z-index: 10;
+        display: none;
     }
 
     .Input_container{
         position: absolute;
-        top: 45%;
-        left:8%;
-        width: 60%;
+        top: 100%;
+        left:10%;
+        width: 70%;
+        /* border: 3px solid rebeccapurple; */
+    }
+
+    .input_subset{
+        position: absolute;
+        bottom: 15%;
+        left:21%;
+        width: 50%;
+        display: grid;
+        gap: 12px;
     }
 
     .heading{
         margin-bottom: 1rem;
-        margin-left: 7.5rem;
-    }
-
-    .input_subset{
-        position: absolute;
-        bottom: 20%;
-        left:50%;
-        width: 100%;
-        display: flex;
-        gap: 12px;
-    } */
-
-
-
-
-
-
-
-
-}
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-
-@media (min-width: 768px) {  
-/* 
-    .arrow-down{
-        display: flex;
-        gap: 11px;
-        cursor: pointer;
-        margin-top: -1.7rem;
-    }
-
-    .dropdown-content{
-        cursor: pointer;
-        background-color: lightgray;
-        width: fit-content;
-        transition: background-color 0.3s ease;
-        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
-        padding: 1.2rem;
-        border-radius: 0.9rem;
-    }
-
-    .img_and_text{
-        display: flex;
-        gap: 2rem;
-    }
-    
-    .img_text{
-        border-radius: 2px;
-        height:  1rem;
-        padding: 3px;
-        border: none;
-    }
-
-    .Input_container{
-        position: absolute;
-        top: 30%;
-        left: 15%;
-        width: 53%;
-     }
-
-     .heading{
-        margin-bottom: 1rem;
-        margin-left: 11rem;
-        width: 100%;
-    }
-
-    .input{
-        width: 100%;
-        max-width: 100%;
-        height: 200px;
-        padding-top: 10px;
-        resize: none;
-    }
-
-    .response_Icon{
-        padding: 0.4rem;
-        border-radius: 1rem;
-        position: absolute;
-        top: 5.3rem;
-        left: 39.5rem;
-        resize: none;
-    }
-
-    .input_subset{
-        position: absolute;
-        bottom: 43%;
-        left: 23%;
-        display: flex;
-        gap: 12px;
+        margin-left: 9rem;
     }
 
     .surprise-me-button {
         display: flex;
         align-items: center;
         justify-content: center;
-        padding: 10px;
+        /* padding: 20px; */
         font-size: 16px;
         border: none;
         background-color: #f0f0f0;
         cursor: pointer;
         gap: 1rem;
-        padding: 1rem;
-        border-radius: 0.6rem;
-    } */
+        padding: 1.4rem;
+        border-radius: 0.4rem;
+        /* border: 4px solid red; */
+    }
+
+    .response_Icon{
+        padding: 0.5rem;
+        border-radius: 2rem;
+        position: absolute;
+        top: 4.5rem;
+        left: 35rem;
+        border: none;
+    }
+
+    .dropdown-content{
+        margin-top: 1rem;
+        cursor: pointer;
+        background-color: lightgray;
+        width: fit-content;
+        transition: background-color 0.3s ease;
+        box-shadow: 0px 2px 4px rgba(0, 0, 0, 0.2);
+        padding: 1.9rem;
+        margin-left: 6rem;
+        border-radius: 2rem;
+    }
+
+    .input{
+        width: 100%;
+        max-width: 100%;
+        height: 100px;
+        padding-top: 10px;
+        resize: none;
+    }
+
+    .response_Icon{
+        padding: 0.5rem;
+        border-radius: 2rem;
+        position: absolute;
+        top: 4.5rem;
+        left: 30rem;
+        border: none;
+    }
+
 
 
 }
@@ -331,59 +286,141 @@ textarea {
 
 
 
-
-
-
-
-
-
-
-@media (max-width: 480px) {
-/* 
+@media (min-width: 600px) and (max-width: 767px) {
     .first_container{
         display: flex;
-        justify-content: space-between;
-        border: 3px solid red;
-    }    
-  
-    .arrow-down{
-        display: flex;
-        cursor: pointer;
-        margin-left: 14rem;
-        margin-top: -1.45rem;
+        gap:28rem;
     }
 
-    .Input_container{
+    .input_subset{
         position: absolute;
-        top: 70%;
-        left: 15%;
+        bottom: 20%;
+        left:23%;
         width: 50%;
+        display: grid;
+        gap: 12px;
+        /* border: 4px solid green; */
+    }
+
+    .response_Icon{
+        padding: 0.5rem;
+        border-radius: 2rem;
+        position: absolute;
+        top: 4.5rem;
+        left: 22.5rem;
+        border: none;
     }
 
     .heading{
         margin-bottom: 1rem;
         margin-left: 6rem;
-        width: 100%;
+    }
+
+    .log-out{
+        padding: 1rem;
+        position: absolute;
+        left: 85%;
+        top: 100%;
+        border-radius: 9px;
+        border: none;
+        color:lightblue;
+    }
+
+
+}
+
+
+
+
+@media (min-width: 480px) and (max-width: 599px) {
+
+    .first_container{
+        display: flex;
+        gap:25rem;
+        /* border: 4px solid red; */
+    }
+ 
+    .heading{
+        margin-bottom: 1rem;
+        margin-left: 6rem;
+        /* border: 4px solid red; */
+    }
+
+    .arrow-down{
+        display: flex;
+        gap: 8px;
+        cursor: pointer;
+        margin-left: 12rem;
+        margin-top: -1.45rem;
     }
 
     .input_subset{
         position: absolute;
-        bottom: 55%;
-        left: 8%;
-        display: flex;
-        gap: 8px;
-    } */
+        bottom: 20%;
+        left:29%;
+        width: 50%;
+        display: grid;
+        gap: 12px;
+        /* border: 4px solid green; */
+    }
 
+    .Input_container{
+        position: absolute;
+        top: 100%;
+        left:5%;
+        width: 90%;
+        /* border: 3px solid rebeccapurple; */
+    }
+    
+    .response_Icon{
+        padding: 0.5rem;
+        border-radius: 2rem;
+        position: absolute;
+        top: 4.5rem;
+        left: 18rem;
+        border: none;
+    }
 
-
-
-
-
-
-
-
+    .log-out{
+        padding: 1rem;
+        position: absolute;
+        left: 85%;
+        top: 80%;
+        border-radius: 9px;
+        border: none;
+        color:lightblue;
+    }
+  
 
 }
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+
 
 
 
