@@ -1,16 +1,13 @@
-const arrowDown = document.querySelector('.arrow-down');
-    const dropdownContent = document.querySelector('.dropdown-content');
+const header1 = document.getElementById('header1');
+const header3 = document.getElementById('header3');
+const password = document.getElementById('password');
+const btn1 = document.getElementById('btn1');
+const btn2 = document.getElementById('btn2');
 
-    arrowDown.addEventListener('click', () => {
-        dropdownContent.style.display = dropdownContent.style.display === 'block' ? 'none' : 'block';
-    });
-
-    document.addEventListener('click', function(event) {
-        if (!arrowDown.contains(event.target) && !dropdownContent.contains(event.target)) {
-            dropdownContent.style.display = 'none';
-        }
-    });
-
-
-
-
+let passsword = function(){
+    header3.style.display = 'block';
+    password.style.display = 'block';
+    header1.style.display = 'none';
+    btn1.style.display = 'none';
+    btn2.style.display = 'block';
+}
