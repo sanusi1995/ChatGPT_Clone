@@ -35,6 +35,14 @@
     font-size: 12px;
     width: 100%;
 }
+.container .form .btn2{
+    display: none;
+}
+.container .form .btn2 .dashhh{
+    color: rgb(30, 133, 102);
+    text-decoration: none;
+    color: white;
+}
 .container .form .alternative .log{
     color: rgb(30, 133, 102);
     text-decoration: none;
@@ -295,6 +303,11 @@
         color: rgb(30, 133, 102);
         text-decoration: none;
     }
+    .container .form .btn2 .dashhh{
+        color: rgb(30, 133, 102);
+        text-decoration: none;
+        color: white;
+    }
     .container .form input {
         padding: 15px;
         border: 1px solid grey;
@@ -321,6 +334,10 @@
     }
     .container .form button:hover {
         background: #028e6b;
+    }
+    .container .form .cont{
+        text-decoration: none;
+
     }
     .container .or{
         text-align: center;
