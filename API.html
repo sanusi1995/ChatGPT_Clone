@@ -1,0 +1,122 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Playfair+Display:wght@500&display=swap" rel="stylesheet">
+    <link rel="stylesheet" href="./API.css">
+   
+    <!-- <img src="Icons/chat-gpt.png" alt=""> -->
+    <title>ChatGPT Clone Project</title>
+</head>
+<body>
+    <div class="wrapper">
+
+        <div class="first_container">
+            <img src="Icons/menu.png" alt="" width="20px">
+            <div id="clear_chat">
+                <img src="Icons/pen-and-paper.png" alt=""width="20px"> 
+            </div>          
+        </div>        
+
+                <div class="arrow-down">
+                    <h3>ChatGPT</h3>
+                    <img src="Icons/down-arrow.png" alt="" id="dropdown_icon">
+                </div>
+
+
+            <div class="dropdown-content">
+
+                <div class="f_text">
+                    <div class="img_and_text">
+                        <button class="img_text">
+                            <img src="Icons/star.png" alt="">
+                        </button>
+                        <div class="text">
+                            <h3>Chatgpt Plus</h3>
+                            <p>Our smartest model & more</p>
+                        </div>
+                    </div>
+                     <div class="upgradeBtn">
+                        <button id="upgrade_btn">Upgrade</button>
+                     </div>
+                </div>
+
+              <div class="f_text">
+                   <div class="img_and_text">
+                        <button class="img_text">
+                            <img src="Icons/physics.png" alt="">
+                        </button>
+                        <div class="text">
+                            <h3>Chatgpt</h3>
+                            <p>Great for everyday task</p>
+                        </div>
+                   </div>
+                    <input type="checkbox" name="" id="checkbox1">
+              </div>
+
+               <hr>
+
+              <div class="f_text">
+                   <div class="img_and_text">
+                        <div class="img_text">
+                            <img src="Icons/messenger.png" alt="">
+                        </div>
+                        <h3>Temporary Chat</h3>
+                   </div>
+                    <input type="checkbox" id="toggle-button" class="toggle-input">
+                    <label for="toggle-button" class="toggle-label"></label>
+              </div>
+         </div>
+
+
+             
+
+        <div class="Input_container">
+            <div class="heading">
+                <h1>What can I help with?</h1>
+            </div>
+            <div class="input">
+                <textarea class="icon-textarea" id="" placeholder="Message ChatGPT"></textarea>
+            </div> 
+
+            <button class="response_Icon">
+                <img src="Icons/up-arrow.png" alt="">
+            </button>
+
+
+        </div>
+
+        <div class="input_subset">          
+                <button class="surprise-me-button">
+                    <img src="Icons/giftbox.png" alt="">
+                    <p>surprise-me</p>
+                </button>
+
+                <button class="surprise-me-button">
+                    <img src="Icons/brainstrom.png" alt="">
+                    <p>Brainstorm</p>
+                </button>
+                           
+                <button class="surprise-me-button">
+                    <img src="Icons/edit.png" alt="">
+                    <p>Help me write</p>
+                </button>
+
+            <!--
+                <img src="Icons/coding.png" alt="">
+                <button class="surprise-me-button">Code</button> -->
+
+           
+                <button class="surprise-me-button">More</button>
+
+        </div>
+ </div>
+
+
+ 
+  <script src="./API.js"></script>
+</body>
+</html>
